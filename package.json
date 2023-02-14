@@ -1,5 +1,5 @@
 {
-  "name": "data-extractor",
+  "name": "@cloudcannon/data-extractor",
   "type": "module",
   "version": "0.0.1",
   "description": "Parses content files to generate a dataset.",
