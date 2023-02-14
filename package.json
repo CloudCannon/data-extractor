@@ -1,0 +1,50 @@
+{
+  "name": "data-extractor",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Parses content files to generate a dataset.",
+  "keywords": [
+    "cloudcannon"
+  ],
+  "homepage": "https://github.com/CloudCannon/data-extractor#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CloudCannon/data-extractor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CloudCannon/data-extractor/issues",
+    "email": "support@cloudcannon.com"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "ava",
+    "test:watch": "ava --watch --verbose",
+    "test:coverage": "c8 --all ava",
+    "lint": "eslint src",
+    "release:latest": "npx np",
+    "release:next": "npx np prerelease --tag=next"
+  },
+  "bin": {
+    "cloudcannon-reader": "src/index.js"
+  },
+  "files": [
+    "src/**/*.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "CloudCannon <support@cloudcannon.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^5.2.0",
+    "c8": "^7.11.0",
+    "eslint": "^8.12.0",
+    "mockdate": "^3.0.5"
+  },
+  "dependencies": {
+    "fdir": "^6.0.1",
+    "gray-matter": "^4.0.3",
+    "jsonpath": "^1.1.1",
+    "meow": "^11.0.0"
+  }
+}
