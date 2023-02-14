@@ -1,7 +1,7 @@
 {
   "name": "data-extractor",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Parses content files to generate a dataset.",
   "keywords": [
     "cloudcannon"
